@@ -19,9 +19,10 @@
         <h1>calcola il prezzo del tuo biglietto</h1>
     </header>
     <main>
+        <!-- CONTAINER PER L'INSERIMENTO DEI DATI PER COMPRARE IL BIGLIETTO -->
         <div class="container">
-            <form action="index.html" id="insertForm">
-                <div class="row mb-5">   
+            <form action="index.html" id="insertForm" class="bg-light p-4 rounded shadow mb-3">
+                <div class="row mb-5">
                     <div class="col">
                         <label for="dati" class="form-label">Nome Cognome</label>
                         <input id="dati" type="text" class="form-control" placeholder="Inserisci nome e cognome"
@@ -42,12 +43,25 @@
                         </select>
                     </div>
                 </div>
-    
+
                 <div class="d-flex justify-content-center gap-4">
                     <button type="submit" class="btn btn-primary">Genera</button>
                     <a href="/" class="btn btn-primary " role="button" aria-disabled="true">Indietro</a>
                 </div>
             </form>
+        </div>
+
+
+        <!-- CONTAINER PER LA VISUALIZZAZIONE DEL BIGLIETTO -->
+        <div class="container ticket-container" id="biglietto">
+            <h2> Il tuo biglietto</h2>
+            <div class="row bg-light">
+                <h5>Dettaglio passeggeri</h5>
+                <div class="col-4 bg-secondary">
+                    <p>asdadsadasdasd</p>
+                </div>
+                <div class="col-8"></div>
+            </div>
         </div>
     </main>
 

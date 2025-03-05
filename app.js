@@ -5,19 +5,17 @@ let elementKm = document.getElementById('km');
 let formElement = document.getElementById('insertForm')
 
 
-
-
-
-
 formElement.addEventListener('submit', function (event) {
     // preventDefault mi permette di non aggiornare la pagina
     // e non perdere i dati che invio
     event.preventDefault();
-
-    let eta = elementEta.value;
+    let dati = elementDati.value;
     let km = parseInt(elementKm.value);
+    let eta = elementEta.value;
+    
     let prezzo = km *  (0.21);
     let sconto;
+    console.log(dati)
     console.log(eta);
     console.log(km);
     
@@ -38,4 +36,10 @@ formElement.addEventListener('submit', function (event) {
     console.log(prezzo);
     console.log(`il prezzo del biglietto è di: ${prezzo} €`)
     
+    creaBiglietto();
 });
+
+function creaBiglietto(){
+    let elementBiglietto = document.getElementById('biglietto');
+    elementBiglietto.style.display = 'block';
+}
