@@ -25,18 +25,18 @@
                 <div class="row mb-5">
                     <div class="col">
                         <label for="dati" class="form-label">Nome Cognome</label>
-                        <input id="dati" type="text" class="form-control" placeholder="Inserisci nome e cognome"
-                            aria-label="First name">
+                        <input required id="dati" type="text" class="form-control"
+                            placeholder="Inserisci nome e cognome" aria-label="First name">
                     </div>
                     <div class="col">
                         <label for="km" class="form-label">Km da percorrere</label>
-                        <input id="km" type="text" class="form-control" placeholder="inserisci quanti km"
+                        <input required id="km" type="text" class="form-control" placeholder="inserisci quanti km"
                             aria-label="Last name">
                     </div>
                     <div class="col">
                         <label for="eta" class="form-label">Fascia d'età</label>
-                        <select id="eta" class="form-select" aria-label="Default select example">
-                            <option selected>Fascia d'eta</option>
+                        <select required id="eta" class="form-select" aria-label="Default select example">
+                            <option selected value="">Fascia d'eta</option>
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
                             <option value="over-65">Over 65</option>
@@ -55,12 +55,17 @@
         <!-- CONTAINER PER LA VISUALIZZAZIONE DEL BIGLIETTO -->
         <div class="container ticket-container" id="biglietto">
             <h2> Il tuo biglietto</h2>
-            <div class="row bg-light">
+            <div class="row bg-light d-flex">
                 <h5>Dettaglio passeggeri</h5>
                 <div class="col-4 bg-secondary">
-                    <p>asdadsadasdasd</p>
+                    <p>Nome passeggero</p>
+                    <div class="" id="name-biglietto"></div>
                 </div>
                 <div class="col-8"></div>
+
+                <div class="" id="prezzo-biglietto"></div>
+                <div class="" id="eta-biglietto"></div>
+
             </div>
         </div>
     </main>
