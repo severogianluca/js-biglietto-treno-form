@@ -43,10 +43,10 @@ formElement.addEventListener('submit', function (event) {
     let offertaTreno;
     let numeroCarrozza;
     if (km < 100) {
-        offertaTreno = "Classe Standard";
+        offertaTreno = "Biglietto Standard";
         numeroCarrozza = Math.ceil(Math.random() * 4);
     } else if (km >= 100 && km <= 200) {
-        offertaTreno = "Classe Superior";
+        offertaTreno = "Biglietto Superior";
         numeroCarrozza = Math.ceil(Math.random() * 3) + 4;
     } else {
         offertaTreno = "Super Classe";
@@ -62,7 +62,7 @@ formElement.addEventListener('submit', function (event) {
     let codiceBiglietto = document.getElementById('codice-biglietto');
     let prezzoBiglietto = document.getElementById('prezzo-biglietto');
 
-    nameBiglietto.innerHTML = dati;
+    nameBiglietto.innerHTML = '<strong style="color: black;">' + dati + '</strong>';
     offertaBiglietto.innerHTML = offertaTreno;
     carrozzaBiglietto.innerHTML = numeroCarrozza;
     codiceBiglietto.innerHTML = codiceCasuale;
