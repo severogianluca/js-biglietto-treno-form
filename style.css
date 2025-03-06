@@ -6,7 +6,25 @@ h1, h2{
     text-transform: uppercase;
     text-align: center;
 }
-/* 
+
+.custom-border {
+    border-top: 1px solid grey;  
+    border-bottom: 1px solid grey;
+}
+
+#insertForm label{
+    color:  #b91547;
+}
+
+
+#bottoni button, #bottoni a {
+    color: #b91547;
+    font-weight: bold;
+    background-color: rgb(230, 227, 227);
+}
+
+
+/* per nasconderlo e lo farl ricomparire nel js rig 72-73 */
 .ticket-container {
     display: none;
-} */
+}

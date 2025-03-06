@@ -24,18 +24,18 @@
             <form action="index.html" id="insertForm" class="bg-light p-4 rounded shadow mb-3">
                 <div class="row mb-5">
                     <div class="col">
-                        <label for="dati" class="form-label">Nome Cognome</label>
-                        <input required id="dati" type="text" class="form-control"
+                        <label for="dati" class="form-label d-flex justify-content-center">Nome Cognome</label>
+                        <input required id="dati" type="text" class="form-control border border-danger"
                             placeholder="Inserisci nome e cognome" aria-label="First name">
                     </div>
                     <div class="col">
-                        <label for="km" class="form-label">Km da percorrere</label>
-                        <input required id="km" type="text" class="form-control" placeholder="inserisci quanti km"
+                        <label for="km" class="form-label d-flex justify-content-center">Km da percorrere</label>
+                        <input required id="km" type="text" class="form-control border border-danger" placeholder="inserisci quanti km"
                             aria-label="Last name">
                     </div>
                     <div class="col">
-                        <label for="eta" class="form-label">Fascia d'età</label>
-                        <select required id="eta" class="form-select" aria-label="Default select example">
+                        <label for="eta" class="form-label d-flex justify-content-center">Fascia d'età</label>
+                        <select required id="eta" class="form-select border border-danger" aria-label="Default select example">
                             <option selected value="">Fascia d'eta</option>
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
@@ -44,9 +44,9 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center gap-4">
-                    <button type="submit" class="btn btn-primary">Genera</button>
-                    <a href="/" class="btn btn-primary " role="button" aria-disabled="true">Indietro</a>
+                <div id="bottoni" class="d-flex justify-content-center gap-4">
+                    <button type="submit" class="btn  border border-warning">Genera</button>
+                    <a href="/" class="btn border border-secondary" role="button" aria-disabled="true">Indietro</a>
                 </div>
             </form>
         </div>
