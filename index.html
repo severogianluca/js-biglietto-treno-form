@@ -54,20 +54,41 @@
 
         <!-- CONTAINER PER LA VISUALIZZAZIONE DEL BIGLIETTO -->
         <div class="container ticket-container" id="biglietto">
-            <h2> Il tuo biglietto</h2>
-            <div class="row bg-light d-flex">
-                <h5>Dettaglio passeggeri</h5>
-                <div class="col-4 bg-secondary">
-                    <p>Nome passeggero</p>
-                    <div class="" id="name-biglietto"></div>
+            <h2>Il tuo biglietto</h2>
+            <div class="row bg-light p-3">
+                <h5><strong>Dettaglio passeggeri</strong></h5>
+
+                <!-- Colonna 1: Nome passeggero -->
+                <div class="col-4 bg-secondary p-3">
+                    <p><strong>Nome passeggero</strong></p>
+                    <div id="name-biglietto" class="bold"></div>
                 </div>
-                <div class="col-8"></div>
 
-                <div class="" id="prezzo-biglietto"></div>
-                <div class="" id="eta-biglietto"></div>
-
+                <!-- Colonna 2: Dettagli viaggio -->
+                <div class="col-8 p-3">
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <p><strong>Offerta:</strong></p>
+                            <div id="offerta-biglietto"></div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p><strong>Carrozza:</strong></p>
+                            <div id="carrozza-biglietto"></div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p><strong>Codice CP:</strong></p>
+                            <div id="codice-biglietto"></div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p><strong>Costo biglietto:</strong></p>
+                            <div id="prezzo-biglietto"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </main>
 
 
