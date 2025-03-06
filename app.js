@@ -53,7 +53,8 @@ formElement.addEventListener('submit', function (event) {
         numeroCarrozza = Math.ceil(Math.random() * 3) + 7;
     }
 
-
+    // Genero un numero casuale di 6 cifre
+    let codiceCasuale = Math.ceil(Math.random() * 999999);
 
     let nameBiglietto = document.getElementById('name-biglietto');
     let offertaBiglietto = document.getElementById('offerta-biglietto')
